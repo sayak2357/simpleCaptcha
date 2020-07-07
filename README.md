@@ -14,5 +14,29 @@ Steps to run the project(in Linux):
   from captcha.image import ImageCaptcha
   import IPython.display as display
   from PIL import Image
+
+4) declare the following function:
   
-4) execute simpleCaptcha() in commandline or in jupyter notebook
+  
+def simpleCaptcha():
+    randInt = random.randint(1000,9999)
+    n=str(randInt)
+
+
+    image = ImageCaptcha()
+    data = image.generate(n)
+    image.write(n,'out.png')
+    
+   
+
+    image_path = 'out.png'
+    display.display(Image.open(image_path))
+    
+    ip=int(input('enter the number:'))
+    if ip==randInt:
+        print('correct')
+        return True
+    else:
+        simpleCaptcha()
+  
+4) execute driver code by running simpleCaptcha() in commandline or in jupyter notebook
