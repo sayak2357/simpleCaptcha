@@ -19,6 +19,8 @@ Steps to run the project(in Linux):
   
   
     def simpleCaptcha():
+    
+    
         randInt = random.randint(1000,9999)
         n=str(randInt)
 
@@ -41,4 +43,4 @@ Steps to run the project(in Linux):
   
 4) execute driver code by running simpleCaptcha() in commandline or in jupyter notebook
 
-5) This project contains the .ipynb file which can be opened using jupyter notebook
+5) This project has a simpleCaptcha.ipynb file which contains the entire code of the project written using jupyter notebook
