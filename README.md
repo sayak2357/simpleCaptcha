@@ -7,6 +7,7 @@ Steps to run the project(in Linux):
 
     sudo apt-get update
     sudo apt-get -y install python3-pip
+    
 2) execute python3 in commandline or open jupyter notebook
 
 3) in jupyter notebook or inside python3 shell, execute:
@@ -43,6 +44,6 @@ Steps to run the project(in Linux):
             else:
                 simpleCaptcha()
   
-4) execute driver code by running simpleCaptcha() in commandline or in jupyter notebook
+4) After the above function, execute driver code by running simpleCaptcha() in commandline or in jupyter notebook
 
 5) This project has a simpleCaptcha.ipynb file which contains the entire code of the project written using jupyter notebook
